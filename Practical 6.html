@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PAN Card Application Form</title>
+
+</head>
+<body bgcolor="lightblue">
+
+<h2> Application for PAN Card</h2>
+<form>
+   
+    <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+            <label>Title:</label>
+            <select name="title">
+                <option value="shri">Shri</option>
+                <option value="smt">Smt</option>
+                <option value="kumari">Kumari</option>
+            </select>
+        </p>
+        <p>
+            <label>Full Name:</label>
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+        </p>
+        <p>
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+        </p>
+    </fieldset>
+
+
+  
+    <fieldset class="radio-group">
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>Documents Submitted (Proof of Address)</legend>
+        <input type="checkbox" id="aadhaar" name="docs" value="aadhaar">
+        <label for="aadhaar">Aadhaar Card</label><br>
+        <input type="checkbox" id="passport" name="docs" value="passport">
+        <label for="passport">Passport</label><br>
+        <input type="checkbox" id="voterid" name="docs" value="voterid">
+        <label for="voterid">Voter ID</label>
+    </fieldset>
+
+    <input type="submit" value="Submit Application">
+</form>
+
+</body>
